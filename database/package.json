@@ -1,0 +1,12 @@
+{
+  "name": "database",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "setup": "mongod --dbpath=db/data & mongo admin db/scripts/setup.js",
+    "start": "mongod --dbpath=db/data --auth"
+  },
+  "author": "",
+  "license": "ISC"
+}
