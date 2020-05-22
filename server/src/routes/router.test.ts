@@ -4,7 +4,7 @@ import rootRouter from './router'
 import Controller from '../controllers/controller'
 import Repository from '../repositories/repository'
 
-const repository = new Repository({ username: 'test', password: 'test342', dbName: 'measures'})
+const repository = new Repository({ username: 'test', password: 'test342', dbName: 'main' })
 sinon.mock(repository)
 
 const controller = new Controller(repository)
@@ -12,6 +12,6 @@ sinon.mock(controller)
 
 const router = rootRouter(controller)
 
-describe('ROUTER UNIT TEST', function() {
+describe('ROUTER UNIT TEST', function () {
 
 })

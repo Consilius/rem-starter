@@ -15,11 +15,11 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
 // Initialize Controllers and Repositories
-const repository = new Repository({ username: 'admin', password: 'Admin564', dbName: 'main'})
+const repository = new Repository({ username: 'admin', password: 'Admin564', dbName: 'main' })
 const controller = new Controller(repository)
 
 // Declare routes
-app.use(paths.measure, router(controller))
+app.use(paths.root, router(controller))
 
 // NODE_ENV === 'development' client runs on webpack-dev-server
 if (process.env.NODE_ENV === 'production') {

@@ -4,7 +4,7 @@ import Controller from '../controllers/controller'
 function router(controller: Controller) {
   const router = Router()
 
-  router.post('/', async (req, res) => await function(req, res) {})
+  router.post('/', async (req, res) => await function (req, res) { })
 
   return router
 }

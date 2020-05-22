@@ -18,7 +18,7 @@ newDb.createUser({
     ]
 });
 
-newDb.createCollection('measures')
-newDb['measures'].insert({ a: 'b' })
+newDb.createCollection('collection')
+newDb['collection'].insert({ a: 'b' })
 
 db.shutdownServer();

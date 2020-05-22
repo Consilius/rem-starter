@@ -8,7 +8,7 @@ import Repository from '../repositories/repository'
 chai.use(sinonChai)
 const { expect } = chai
 
-describe('CONTROLLER UNIT TEST', function() {
-   
+describe('CONTROLLER UNIT TEST', function () {
+
 })
 
