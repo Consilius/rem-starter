@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "setup": "mongod --dbpath=db/data & mongo admin db/scripts/setup.js",
-    "start": "mongod --dbpath=db/data --auth"
+    "setup": "mongod --dbpath=data & mongo admin scripts/setup.js",
+    "start": "mongod --dbpath=data --auth"
   },
   "author": "",
   "license": "ISC"

@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "cd client; npm run dev && cd ../server; npm run dev",
     "setup": "cd client; npm i; cd ../server; npm i; cd ../database; npm run setup;",
-    "start": "cd client; npm run build; cd ../server; npm run mongo && npm run start"
+    "start": "cd client; npm run build; cd ../server; npm run mongo && npm run start",
+    "clean": "cd client; rm -rf node_modules; cd ../server; rm -rf node_modules; cd ../database; rm -rf node_modules; rm -rf node_modules"
   },
   "author": "",
   "license": "ISC"
